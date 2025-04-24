@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapdhe.com - Clothing for Everyone</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=16&id=HBbm6BHiqSZn&format=png">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kapdhe.com offers stylish ladies kapde, bacho ke kapde, and online kapde for all ages. Discover cute, comfy, and trendy outfits crafted with love in our exclusive collection.">
+    <meta name="keywords" content="ladies kapde, bacho ke kapde, online kapde, clothing, fashion, Kapdhe, outfits, stylish clothes, comfy clothes, clothing for all ages">
+    <meta name="author" content="Kapdhe">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Kapdhe - Clothing for Everyone">
+    <meta property="og:description" content="Explore stylish ladies kapde, bacho ke kapde, and online kapde at Kapdhe.com! Perfect outfits for every age, crafted with love.">
+    <meta property="og:image" content="https://i.ibb.co/VpSh9W1N/kapdhe-og.png">
+    <meta property="og:url" content="https://kapdhe.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kapdhe - Clothing for Everyone">
+    <meta name="twitter:description" content="Explore stylish ladies kapde, bacho ke kapde, and online kapde at Kapdhe.com! Perfect outfits for every age, crafted with love.">
+    <meta name="twitter:image" content="https://i.ibb.co/VpSh9W1N/kapdhe-og.png">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QFGW8LVXE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5QFGW8LVXE');
+</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5E3E0;
+        }
+        .clothing-item {
+            position: absolute;
+            transition: all 0.3s ease;
+            z-index: 0;
+        }
+        .hero-text {
+            z-index: 10;
+            position: relative;
+        }
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000000;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+        }
+        .hero-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #000000;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+        .hero-section {
+            background: linear-gradient(to bottom, #E8E9EB, #E5D8C7);
+        }
+        .btn-primary {
+            background-color: #5C2A29;
+        }
+        .btn-primary:hover {
+            background-color: #4A2221;
+        }
+        .social-icon {
+            color: #000000;
+        }
+        .social-icon:hover {
+            color: #5C2A29;
+        }
+        .footer-social-icon {
+            color: #E8E9EB;
+        }
+        .footer-social-icon:hover {
+            color: #5C2A29;
+        }
+        .footer-link {
+            color: #E8E9EB;
+        }
+        .footer-link:hover {
+            color: #5C2A29;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="logo-text">KAPDHE</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.instagram.com/kapdheofficial/" class="social-icon text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon text-xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon text-xl"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen hero-section flex items-center justify-center overflow-hidden">
+        <div class="text-center hero-text">
+           
+            <h1 class="text-5xl md:text-7xl hero-logo mb-4">KAPDHE</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 font-bold">कपड़े वही जो आप पर लगे एक दम सही!</p>
+            <a href="#coming-soon" class="btn-primary text-white px-8 py-3 rounded-full text-lg transition">
+                Discover Your Perfect Outfit
+            </a>
+          
+        </div>
+        <!-- Animated Clothing Items -->
+        <div class="clothing-item" id="shirt">
+            <img src="https://img.icons8.com/color/100/t-shirt--v1.png" alt="Shirt" class="w-20 clothing-img">
+        </div>
+        <div class="clothing-item" id="dress">
+            <img src="https://img.icons8.com/doodle/48/modelled-dress.png" alt="Dress" class="w-20 clothing-img">
+        </div>
+        <div class="clothing-item" id="pants">
+            <img src="https://img.icons8.com/color/100/jeans.png" alt="Pants" class="w-20 clothing-img">
+        </div>
+        <div class="clothing-item" id="boots">
+            <img src="https://img.icons8.com/emoji/48/womans-boot.png" alt="boots" class="w-20 clothing-img">
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section id="coming-soon" class="py-10 bg-[#E8E9EB] text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-6xl font-bold text-[#000000] mb-4">Coming Soon!</h2>
+            <p class="text-xl md:text-2xl text-gray-800 mb-4">
+                <span id="dynamic-word"><strong></strong></span>
+                 </p>
+            <p class="text-xl text-gray-600 mb-8"> Stay tuned for cute, comfy, and perfect outfits!</p>
+            <div class="flex justify-center">
+                <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-full border border-gray-300 focus:outline-none">
+                <button class="btn-primary text-white px-6 py-2 rounded-r-full transition">
+                    Notify Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#000000] text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.instagram.com/kapdheofficial/" class="footer-social-icon text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-icon text-2xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="footer-social-icon text-2xl"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="https://www.instagram.com/kapdheofficial/" class="flex justify-center items-center footer-link text-base">
+                <i class="fab fa-instagram mr-2"></i> Follow @kapdheofficial on Instagram
+            </a>
+            <p class="mt-4">© 2025 Kapdhe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Animation Script and Text Randomizer -->
+    <script>
+        // Function to calculate opacity based on distance from center
+        function updateOpacity(element, animation) {
+            const img = element.querySelector('.clothing-img');
+            const rect = img.getBoundingClientRect();
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            const distance = Math.sqrt(
+                Math.pow(rect.left + rect.width / 2 - centerX, 2) +
+                Math.pow(rect.top + rect.height / 2 - centerY, 2)
+            );
+            const maxDistance = Math.sqrt(
+                Math.pow(window.innerWidth / 2, 2) +
+                Math.pow(window.innerHeight / 2, 2)
+            );
+            const opacity = Math.min(1, Math.max(0.1, distance / (maxDistance * 0.5)));
+            gsap.set(img, { opacity });
+        }
+
+        // Smooth animations with dynamic opacity for clothing images
+        gsap.to("#shirt", {
+            x: "60vw",
+            y: "40vh",
+            rotation: 360,
+            scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            duration: 8,
+            ease: "power2.inOut",
+            stagger: 0.2,
+            onUpdate: function() {
+                updateOpacity(document.querySelector("#shirt"), this);
+            }
+        });
+        gsap.to("#dress", {
+            x: "-50vw",
+            y: "30vh",
+            rotation: -360,
+            scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            duration: 9,
+            ease: "power2.inOut",
+            stagger: 0.3,
+            onUpdate: function() {
+                updateOpacity(document.querySelector("#dress"), this);
+            }
+        });
+        gsap.to("#pants", {
+            x: "40vw",
+            y: "-30vh",
+            rotation: 180,
+            scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            duration: 7,
+            ease: "power2.inOut",
+            stagger: 0.1,
+            onUpdate: function() {
+                updateOpacity(document.querySelector("#pants"), this);
+            }
+        });
+        gsap.to("#boots", {
+            x: "-30vw",
+            y: "-40vh",
+            rotation: 360,
+            scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            duration: 8,
+            ease: "power2.inOut",
+            stagger: 0.4,
+            onUpdate: function() {
+                updateOpacity(document.querySelector("#boots"), this);
+            }
+        });
+
+        // Text Randomizer with Flip Animation
+        const words = [
+  "Bacho ke kapde 👶👕",
+  "Cute comfy outfits 😊🧸",
+  "Ladkiyon ke kapde 👗💃",
+  "Shaadi ke kapdhe 💒👰",
+  "Party ke kapdhe 🎉✨",
+  "GenZ Clothes 😎🔥",
+  "Dhoti Kurta 🧣🇮🇳",
+  "Designer Kapde 👜💅",
+  "Gym ke kapde 💪🏋️",
+  "Gharmiyon ke kapde 🌞👙",
+]
+        const dynamicWord = document.getElementById('dynamic-word');
+
+        function updateWord() {
+            const randomIndex = Math.floor(Math.random() * words.length);
+            const newWord = `<strong>${words[randomIndex]}</strong>`;
+            // Flip animation: rotateY from 0 to 90, update word, then rotate back
+            gsap.to(dynamicWord, {
+                rotationY: 90,
+                opacity: 0,
+                duration: 0.3,
+                ease: "power2.out",
+                onComplete: () => {
+                    dynamicWord.innerHTML = newWord;
+                    gsap.to(dynamicWord, {
+                        rotationY: 0,
+                        opacity: 1,
+                        duration: 0.3,
+                        ease: "power2.in"
+                    });
+                }
+            });
+        }
+
+        // Update word every 3 seconds
+        updateWord(); // Initial call
+        setInterval(updateWord, 3000);
+    </script>
+
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
