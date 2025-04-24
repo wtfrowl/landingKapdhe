@@ -184,7 +184,13 @@
                 Math.pow(window.innerWidth / 2, 2) +
                 Math.pow(window.innerHeight / 2, 2)
             );
-            const opacity = Math.min(1, Math.max(0.1, distance / (maxDistance * 0.5)));
+             // Calculate opacity based on distance
+            const threshold = 600;
+            let opacity = 1;
+            if (distance < threshold) {
+                const normalized = distance / threshold;
+                opacity = normalized; // or: Math.pow(normalized, 0.5) for a tiny ease
+            }
             gsap.set(img, { opacity });
         }
 
